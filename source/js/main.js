@@ -73,3 +73,13 @@ button.addEventListener('click', () => {
     iframeBlock.append(newIframe);
   }
 });
+
+// Tabs
+import {initTabs} from './modules/tabs/init-tabs.js';
+
+window.addEventListener('DOMContentLoaded', () => {
+  window.addEventListener('load', () => {
+    initTabs();
+  });
+});
+
