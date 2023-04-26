@@ -1,0 +1,165 @@
+.about {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-left: 100px;
+  padding-right: 40px;
+  padding-bottom: 150px;
+
+  @media (max-width: 1199.9px) {
+    padding-top: 60px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  @media (max-width: 767.9px) {
+    padding-top: 63px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.about__wrapper {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+
+  @media (max-width: 1199.9px) {
+    display: unset;
+  }
+}
+
+.about__inner-wrapper {
+  position: relative;
+  place-self: start end;
+}
+
+.about__image {
+  @media (max-width: 767.9px) {
+    margin-bottom: 40px;
+  }
+}
+
+.about__image img {
+  @media (max-width: 1199.9px) {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.about__info {
+  margin-top: 40px;
+
+  @media (max-width: 1199.9px) {
+    text-align: center;
+  }
+
+  @media (max-width: 767.9px) {
+    text-align: unset;
+    margin-top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.about__info h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 57.6px;
+  letter-spacing: 1.44px;
+  color: $color-dark;
+  margin-bottom: 6px;
+
+  @media (max-width: 1199.9px) {
+    font-size: 42px;
+    line-height: 50.4px;
+    letter-spacing: 1.26px;
+    margin-bottom: -2px;
+    margin-left: -14px;
+  }
+
+  @media (max-width: 767.9px) {
+    font-size: 32px;
+    line-height: 38.4px;
+    letter-spacing: 0.96px;
+    margin-left: 0;
+    margin-bottom: 5px;
+  }
+}
+
+.about__info h3 {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-dark;
+  margin-bottom: 39px;
+
+  @media (max-width: 1199.9px) {
+    margin-bottom: 35px;
+  }
+
+  @media (max-width: 767.9px) {
+    margin-bottom: 23px;
+  }
+}
+
+.about__info p {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-dark;
+  margin-bottom: 8px;
+  max-width: 355px;
+
+  @media (max-width: 1199.9px) {
+    padding: 0 50px;
+    text-align: center;
+    margin-bottom: 44px;
+    max-width: unset;
+  }
+
+  @media (max-width: 767.9px) {
+    padding: unset;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 34px;
+  }
+}
+
+.about__info p:not(:first-of-type) {
+  @media (max-width: 1199.9px) {
+    display: none;
+  }
+}
+
+.about__video {
+  position: absolute;
+  width: 364px;
+  height: 228px;
+  top: 72%;
+  left: -9.5%;
+
+  @media (max-width: 1199.9px) {
+    width: 39.2%;
+    height: 48.7%;
+    top: 75.4%;
+    left: 30.4%;
+  }
+
+  @media (max-width: 767.9px) {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}

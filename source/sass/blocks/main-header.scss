@@ -1,0 +1,123 @@
+.main-header {
+  width: 100%;
+  background: conic-gradient(from 150.87deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+
+  @media (max-width: 1199.9px) {
+    background: conic-gradient(from 155.49deg at 20.7% 35.74%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  }
+
+  @media (max-width: 767.9px) {
+    background: conic-gradient(from 167.26deg at 35.31% 34.22%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  }
+}
+
+.main-header__container {
+  padding-left: 40px;
+  padding-right: 40px;
+
+  @media (max-width: 1199.9px) {
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+
+  @media (max-width: 767.9px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.main-header__wrapper {
+  padding: 30px 0 0 0;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: 1fr auto 1fr;
+  row-gap: 10px;
+
+  @media (max-width: 1199.9px) {
+    padding: 33px 0 0 0;
+  }
+
+  @media (max-width: 767.9px) {
+    padding: 15px 0 0 0;
+  }
+}
+
+.main-header__wrapper a:not(.main-header__phone) {
+  grid-column: 1 / 2;
+  place-self: start;
+}
+
+.main-header__logo {
+  margin-top: 10px;
+
+  @media (max-width: 1199.9px) {
+    margin-top: 6px;
+    margin-left: -3px;
+  }
+
+  @media (max-width: 767.9px) {
+    margin-left: 0;
+  }
+}
+
+.main-header__logo img {
+  @media (max-width: 1199.9px) {
+    width: 82px;
+    height: 17px;
+  }
+
+  @media (max-width: 767.9px) {
+    width: 67px;
+    height: 12px;
+  }
+}
+
+.main-header__phone {
+  place-self: start end;
+  grid-column: 3/4;
+}
+
+.main-header__phone span {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31.2px;
+  letter-spacing: 0.78px;
+  color: $color-default-white;
+
+  @media (max-width: 1199.9px) {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.8px;
+    letter-spacing: 0.48px;
+  }
+
+  @media (max-width: 767.9px) {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+  }
+}
+
+.main-header__description {
+  padding-bottom: 52px;
+
+  @media (max-width: 1199.9px) {
+    padding-bottom: 82px;
+    padding-left: 120px;
+  }
+
+  @media (max-width: 960px) {
+    padding-left: 60px;
+  }
+
+  @media (max-width: 850px) {
+    padding-left: 0;
+    padding-bottom: 83px;
+  }
+
+  @media (max-width: 767.9px) {
+    padding-bottom: 79px;
+  }
+}
