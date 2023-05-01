@@ -1,0 +1,130 @@
+.events {
+  padding-top: 120px;
+}
+
+.events__wrapper {
+  display: flex;
+}
+
+.events__description {
+  background-color: $color-events-bg;
+  padding: 80px 78px;
+  color: $color-default-white;
+  max-width: 500px;
+  max-height: 500px;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+.events__description p {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 10px 0 0 0;
+}
+
+.events__inner-wrapper {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  column-gap: 18%;
+  margin-left: 12px;
+}
+
+.events__inner-wrapper h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 82px;
+  line-height: 78.72px;
+  letter-spacing: 2.46px;
+  text-transform: uppercase;
+  margin-top: 6px;
+}
+
+.events__date {
+  margin-bottom: 8px;
+}
+
+.events__date-info {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  width: fit-content;
+}
+
+.events__date-info::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  right: 0;
+  top: 6px;
+  left: 0;
+  background: $color-default-white;
+}
+
+.events__time-number {
+  display: inline-flex;
+  position: relative;
+}
+
+.events__time-number::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  right: 0;
+  top: 5px;
+  left: 0;
+  background: $color-default-white;
+}
+
+.events__date-key,
+.events__time-key {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.events__date-number,
+.events__time-number {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.events__date-number {
+  margin-right: 6px;
+}
+
+.events__date-day {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.events__button {
+  width: 345px;
+  //display: flex;
+  // align-items: center;
+  // align-self: center;
+  text-align: center;
+  padding: 27px 110px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14.06px;
+  letter-spacing: .6px;
+  color: #fff;
+  text-transform: uppercase;
+  border: 4px solid #fff;
+  //margin-left: -12px;
+  user-select: none;
+}

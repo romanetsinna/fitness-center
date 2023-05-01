@@ -1,3 +1,66 @@
 .membership {
+  position: relative;
   background-color: $colog-bg;
+  padding-top: 120px;
+  padding-bottom: 80px;
+
+  @media (max-width: 1199.9px) {
+    padding-top: 102px;
+    padding-bottom: 61px;
+  }
+
+  @media (max-width: 767.9px) {
+    padding-top: 63px;
+    padding-bottom: 30px;
+  }
+}
+
+.membership__tabs h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 64.8px;
+  letter-spacing: 1.62px;
+  color: $color-dark;
+  text-align: center;
+  margin-bottom: 16px;
+  margin-left: -2px;
+
+  @media (max-width: 1199.9px) {
+    font-size: 42px;
+    line-height: 50.4px;
+    letter-spacing: 1.26px;
+    margin-bottom: 19px;
+    margin-left: -14px;
+  }
+
+  @media (max-width: 767.9px) {
+    font-size: 32px;
+    line-height: 38.4px;
+    letter-spacing: 0.96px;
+    margin-bottom: 20px;
+    margin-left: -11px;
+  }
+}
+
+.membership__image img {
+  position: absolute;
+  content: "";
+  width: 287px;
+  height: 497px;
+  right: 0;
+  bottom: -17.8%;
+
+  @media (max-width: 1199.9px) {
+    width: 346px;
+    height: 444px;
+    right: 0;
+    bottom: -7%;
+  }
+
+  @media (max-width: 767.9px) {
+    display: none;
+  }
 }

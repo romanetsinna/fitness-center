@@ -1,0 +1,176 @@
+.element {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 3.2%;
+  row-gap: 20px;
+
+  @media (max-width: 1199.9px) {
+    grid-template-columns: 1fr;
+    padding-left: 120px;
+    padding-right: 120px;
+    row-gap: 40px;
+  }
+
+  @media (max-width: 767.9px) {
+    padding-left: 0;
+    padding-right: 0;
+    row-gap: 35px;
+  }
+}
+
+.element__wrapper {
+  max-width: 360px;
+  min-height: 448px;
+  background-color: $color-default-white;
+  padding: 65px 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: 1199.9px) {
+    max-width: 100%;
+  }
+
+  @media (max-width: 767.9px) {
+    min-height: 384px;
+    padding: 50px 30px;
+  }
+}
+
+.element__inner-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.element__wrapper:hover,
+.element__wrapper:focus {
+  position: relative;
+  outline: none;
+}
+
+.element__wrapper:hover::before,
+.element__wrapper:focus::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 7px solid;
+  border-image: linear-gradient(to right bottom, #D10A42, #00359F);
+  border-image-slice: 1;
+  pointer-events: none;
+}
+
+.element__wrapper h3 {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 28.64px;
+  color: $color-dark;
+  margin-bottom: 8px;
+
+  @media (max-width: 1199.9px) {
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 767.9px) {
+    font-size: 22px;
+    line-height: 24.23px;
+  }
+}
+
+.element__wrapper h4 {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $colot-tabs-text;
+  margin-bottom: 66px;
+
+  @media (max-width: 1199.9px) {
+    margin-bottom: 65px;
+  }
+
+  @media (max-width: 767.9px) {
+    margin-bottom: 54px;
+  }
+}
+
+.element__wrapper div::after {
+  position: relative;
+  content: attr(data-parent);
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 90px;
+  color: $color-tabs-price;
+
+  @media (max-width: 767.9px) {
+    font-size: 48px;
+    line-height: 72px;
+  }
+}
+
+.element__wrapper div::before {
+  position: absolute;
+  content: attr(data-parent);
+  text-shadow: -20px -56px 0 #e8e8e8;
+  color: transparent;
+  opacity: 0.48;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 150px;
+
+  @media (max-width: 767.9px) {
+    font-size: 80px;
+    line-height: 120px;
+    text-shadow: -17px -45px 0 #e8e8e8;
+  }
+}
+
+.element__icon {
+  margin-left: 12px;
+  z-index: 1;
+
+  @media (max-width: 767.9px) {
+    width: 24px;
+    height: 33px;
+    margin-right: -3px;
+  }
+}
+
+.element__button {
+  max-width: 212px;
+  padding: 23px 44px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14.06px;
+  letter-spacing: 0.6px;
+  color: $color-dark;
+  text-transform: uppercase;
+  border: 2px solid $color-dark;
+  margin-top: 34px;
+  text-align: center;
+
+  @media (max-width: 767.9px) {
+    padding: 24px 44px;
+    margin-top: 29px;
+  }
+}
+
+.element__button:hover,
+.element__button:focus {
+  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  color: $color-default-white;
+  border: 0;
+  padding: 25px 46px;
+}
+

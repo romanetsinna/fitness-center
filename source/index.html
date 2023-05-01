@@ -120,106 +120,166 @@
             <!-- Membership -->
             <section id="membership" class="main-container__membership membership">
               <div class="container">
-                <p>Абонементы</p>
-
-                <section class="component-demo" data-tabs="element">
-                  <h2 class="subtitle">Пример без data-height="max"</h2>
-                  <div class="tabs no-transition-global" data-tabs="parent" data-delay="300">
+                <section class="membership__tabs">
+                  <h2>Абонементы</h2>
+                  <div class="tabs no-transition-global" data-tabs="parent" data-delay="200">
                     <div class="tabs__controls" data-tabs="controls">
-                      <button class="tabs__control btn" type="button" data-tabs="control">Таб 1</button>
-                      <button class="tabs__control btn is-active" type="button" data-tabs="control">Таб 2</button>
-                      <button class="tabs__control btn" type="button" data-tabs="control">Таб 3</button>
-                      <button class="tabs__control btn" type="button" data-tabs="control">Таб 4</button>
+                      <button class="tabs__control button is-active" type="button" data-tabs="control">1 месяц</button>
+                      <button class="tabs__control button" type="button" data-tabs="control">6 месяцев</button>
+                      <button class="tabs__control button" type="button" data-tabs="control">12 месяцев</button>
                     </div>
                     <div class="tabs__content" data-tabs="content">
-                      <div class="tabs__element" data-tabs="element">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-                      </div>
-                      <div class="tabs__element" data-tabs="element">
-                        <div class="tabs no-transition-global" data-tabs="parent" data-delay="300">
-                          <div class="tabs__controls" data-tabs="controls">
-                            <button class="tabs__control btn" type="button" data-tabs="control">Sub Таб 1</button>
-                            <button class="tabs__control btn" type="button" data-tabs="control">Sub Таб 2</button>
-                            <button class="tabs__control btn" type="button" data-tabs="control">Sub Таб 3</button>
-                            <button class="tabs__control btn is-active" type="button" data-tabs="control">Sub Таб 4</button>
+                      <div class="tabs__element element" data-tabs="element">
+                        <div class="element__wrapper" tabindex="0">
+                          <h3>С тренером</h3>
+                          <h4>12 занятий</h4>
+                          <div class="element__inner-wrapper">
+                            <div data-parent="5000"></div>
+                            <svg class="element__icon" area-hidden="true" focusable="false" width="30" height="42">
+                              <use href="./img/sprite.svg#rouble" />
+                            </svg>
                           </div>
-                          <div class="tabs__content" data-tabs="content">
-                            <div class="tabs__element" data-tabs="element">
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-                            </div>
-                            <div class="tabs__element" data-tabs="element">
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-                            </div>
-                            <div class="tabs__element" data-tabs="element">
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-                            </div>
-                            <div class="tabs__element" data-tabs="element">
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-                            </div>
+                          <a class="button element__button" href="#">Купить абонемент</a>
+                        </div>
+                        <div class="element__wrapper" tabindex="0">
+                          <h3>Дневной</h3>
+                          <h4>С 8:00 до 17:00</h4>
+                          <div class="element__inner-wrapper">
+                            <div data-parent="1700"></div>
+                            <svg class="element__icon" area-hidden="true" focusable="false" width="30" height="42">
+                              <use href="./img/sprite.svg#rouble" />
+                            </svg>
                           </div>
+                          <a class="button element__button" href="#">Купить абонемент</a>
+                        </div>
+                        <div class="element__wrapper" tabindex="0">
+                          <h3>Полный день</h3>
+                          <h4>С 8:00 до 22:00</h4>
+                          <div class="element__inner-wrapper">
+                            <div data-parent="2700"></div>
+                            <svg class="element__icon" area-hidden="true" focusable="false" width="30" height="42">
+                              <use href="./img/sprite.svg#rouble" />
+                            </svg>
+                          </div>
+                          <a class="button element__button" href="#">Купить абонемент</a>
                         </div>
                       </div>
-                      <div class="tabs__element" data-tabs="element">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
+                      <div class="tabs__element element" data-tabs="element">
+                        <div class="element__wrapper">
+                          <h3>С тренером</h3>
+                          <h4>12 занятий</h4>
+                          <div class="element__inner-wrapper">
+                            <div data-parent="24000"></div>
+                            <svg class="element__icon" area-hidden="true" focusable="false" width="30" height="42">
+                              <use href="./img/sprite.svg#rouble" />
+                            </svg>
+                          </div>
+                          <a class="button element__button" href="#">Купить абонемент</a>
+                        </div>
+                        <div class="element__wrapper">
+                          <h3>Дневной</h3>
+                          <h4>С 8:00 до 17:00</h4>
+                          <div class="element__inner-wrapper">
+                            <div data-parent="8160"></div>
+                            <svg class="element__icon" area-hidden="true" focusable="false" width="30" height="42">
+                              <use href="./img/sprite.svg#rouble" />
+                            </svg>
+                          </div>
+                          <a class="button element__button" href="#">Купить абонемент</a>
+                        </div>
+                        <div class="element__wrapper">
+                          <h3>Полный день</h3>
+                          <h4>С 8:00 до 22:00</h4>
+                          <div class="element__inner-wrapper">
+                            <div data-parent="12960"></div>
+                            <svg class="element__icon" area-hidden="true" focusable="false" width="30" height="42">
+                              <use href="./img/sprite.svg#rouble" />
+                            </svg>
+                          </div>
+                          <a class="button element__button" href="#">Купить абонемент</a>
+                        </div>
                       </div>
-                      <div class="tabs__element" data-tabs="element">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <h2 class="subtitle">Пример с data-height="max"</h2>
-                  <div class="tabs no-transition-global" data-tabs="parent" data-delay="300" data-height="max">
-                    <div class="tabs__controls" data-tabs="controls">
-                      <button class="tabs__control btn" type="button" data-tabs="control">Таб 1</button>
-                      <button class="tabs__control btn" type="button" data-tabs="control">Таб 2</button>
-                      <button class="tabs__control btn" type="button" data-tabs="control">Таб 3</button>
-                      <button class="tabs__control btn" type="button" data-tabs="control">Таб 4</button>
-                    </div>
-                    <div class="tabs__content" data-tabs="content">
-                      <div class="tabs__element" data-tabs="element">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-                      </div>
-                      <div class="tabs__element" data-tabs="element">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-                      </div>
-                      <div class="tabs__element" data-tabs="element">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-                      </div>
-                      <div class="tabs__element" data-tabs="element">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
+                      <div class="tabs__element element" data-tabs="element">
+                        <div class="element__wrapper">
+                          <h3>С тренером</h3>
+                          <h4>12 занятий</h4>
+                          <div class="element__inner-wrapper">
+                            <div data-parent="36000"></div>
+                            <svg class="element__icon" area-hidden="true" focusable="false" width="30" height="42">
+                              <use href="./img/sprite.svg#rouble" />
+                            </svg>
+                          </div>
+                          <a class="button element__button" href="#">Купить абонемент</a>
+                        </div>
+                        <div class="element__wrapper">
+                          <h3>Дневной</h3>
+                          <h4>С 8:00 до 17:00</h4>
+                          <div class="element__inner-wrapper">
+                            <div data-parent="12240"></div>
+                            <svg class="element__icon" area-hidden="true" focusable="false" width="30" height="42">
+                              <use href="./img/sprite.svg#rouble" />
+                            </svg>
+                          </div>
+                          <a class="button element__button" href="#">Купить абонемент</a>
+                        </div>
+                        <div class="element__wrapper">
+                          <h3>Полный день</h3>
+                          <h4>С 8:00 до 22:00</h4>
+                          <div class="element__inner-wrapper">
+                            <div data-parent="19440"></div>
+                            <svg class="element__icon" area-hidden="true" focusable="false" width="30" height="42">
+                              <use href="./img/sprite.svg#rouble" />
+                            </svg>
+                          </div>
+                          <a class="button element__button" href="#">Купить абонемент</a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </section>
+                <div class="membership__image">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 1199.9px)" srcset="img/membership-bg-tablet.webp 1x, img/membership-bg-tablet@2x.webp 2x">
+                    <img src="img/membership-bg.webp" width="287" height="497" alt="Фото оборудования тренажерного зала." srcset="img/membership-bg@2x.webp 2x">
+                  </picture>
+                </div>
               </div>
             </section>
 
             <!-- Events -->
-            <section class="main-container__events events container">
-              <div class="events__wrapper container">
-                <div class="events__inner-wrapper">
-                  <h2>Super games</h2>
-                  <div class="events__schedule">
-                    <div class="events__date">
-                      <span>Дата</span>
-                      <div class="events__date-info">
-                        <span>7</span>
-                        <div class="events__date-day">
-                          <span>Марта</span>
-                          <span>2019</span>
+            <section class="main-container__events events">
+              <div class="container">
+                <div class="events__wrapper">
+                  <div class="events__description">
+                    <div class="events__inner-wrapper">
+                      <h2>Super games</h2>
+                      <div class="events__schedule">
+                        <div class="events__date">
+                          <span class="events__date-key">Дата</span>
+                          <div class="events__date-info">
+                            <span class="events__date-number">7</span>
+                            <div class="events__date-day">
+                              <span>Марта</span>
+                              <span>2019</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="events__time">
+                          <span class="events__time-key">Время</span>
+                          <span class="events__time-number">12:00</span>
                         </div>
                       </div>
                     </div>
-                    <div class="events__time">
-                      <span>Время</span>
-                      <span>12:00</span>
-                    </div>
+                    <p>Ежегодные соревнования по CrossFit</p>
+                    <a class="button events__button" href="#">Заполнить заявку dkjf sdfkjsdf  jdfj</a>
+                  </div>
+                  <div class="events__image">
+                    <picture>
+                      <img src="img/events.webp" width="660" height="500" alt="Фото оборудования тренажерного зала." srcset="img/events@2x.webp 2x">
+                    </picture>
                   </div>
                 </div>
-                <span>Ежегодные соревнования по CrossFit</span>
-                <a class="button events__button" href="#">Заполнить заявку</a>
               </div>
-              <div class="events__image"></div>
             </section>
 
             <!-- Coaches -->
