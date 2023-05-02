@@ -1799,16 +1799,34 @@ button,
 .events {
   padding-top: 120px;
 }
+@media (max-width: 1199.9px) {
+  .events {
+    padding-top: 101px;
+  }
+}
+@media (max-width: 767.9px) {
+  .events {
+    padding-top: 70px;
+  }
+}
 
 .events__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
+@media (max-width: 767.9px) {
+  .events__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 
 .events__description {
   background-color: #ed0233;
-  padding: 80px 78px;
+  padding: 80px 88px 80px 78px;
   color: #ffffff;
   max-width: 500px;
   max-height: 500px;
@@ -1819,6 +1837,19 @@ button,
   grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
 }
+@media (max-width: 1199.9px) {
+  .events__description {
+    width: 43.1%;
+    padding: 42px 45px 50px 45px;
+  }
+}
+@media (max-width: 767.9px) {
+  .events__description {
+    width: 100%;
+    max-width: unset;
+    max-height: unset;
+  }
+}
 
 .events__description p {
   margin: 0;
@@ -1828,6 +1859,20 @@ button,
   font-size: 18px;
   line-height: 27px;
   margin: 10px 0 0 0;
+}
+@media (max-width: 1199.9px) {
+  .events__description p {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 2px 0 0 0;
+  }
+}
+@media (max-width: 767.9px) {
+  .events__description p {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 3px 0 27px 0;
+  }
 }
 
 .events__inner-wrapper {
@@ -1842,6 +1887,17 @@ button,
           column-gap: 18%;
   margin-left: 12px;
 }
+@media (max-width: 1199.9px) {
+  .events__inner-wrapper {
+    margin-left: 6px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 
 .events__inner-wrapper h2 {
   margin: 0;
@@ -1854,9 +1910,42 @@ button,
   text-transform: uppercase;
   margin-top: 6px;
 }
+@media (max-width: 1199.9px) {
+  .events__inner-wrapper h2 {
+    font-size: 48px;
+    line-height: 46.08px;
+    letter-spacing: 1.44px;
+    margin-top: 8px;
+  }
+}
 
 .events__date {
   margin-bottom: 8px;
+}
+@media (max-width: 1199.9px) {
+  .events__date {
+    margin-top: 6px;
+    margin-bottom: 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 1199.9px) {
+  .events__time {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .events__date-info {
@@ -1871,6 +1960,11 @@ button,
   width: -moz-fit-content;
   width: fit-content;
 }
+@media (max-width: 1199.9px) {
+  .events__date-info {
+    margin-top: -3px;
+  }
+}
 
 .events__date-info::before {
   position: absolute;
@@ -1881,12 +1975,22 @@ button,
   left: 0;
   background: #ffffff;
 }
+@media (max-width: 1199.9px) {
+  .events__date-info::before {
+    top: 2px;
+  }
+}
 
 .events__time-number {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   position: relative;
+}
+@media (max-width: 1199.9px) {
+  .events__time-number {
+    margin-top: -4px;
+  }
 }
 
 .events__time-number::before {
@@ -1899,6 +2003,11 @@ button,
   left: 0;
   background: #ffffff;
 }
+@media (max-width: 1199.9px) {
+  .events__time-number::before {
+    top: 4px;
+  }
+}
 
 .events__date-key,
 .events__time-key {
@@ -1906,6 +2015,13 @@ button,
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
+}
+@media (max-width: 1199.9px) {
+  .events__date-key,
+.events__time-key {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 
 .events__date-number,
@@ -1915,9 +2031,21 @@ button,
   font-size: 40px;
   line-height: 60px;
 }
+@media (max-width: 1199.9px) {
+  .events__date-number,
+.events__time-number {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
 
 .events__date-number {
   margin-right: 6px;
+}
+@media (max-width: 1199.9px) {
+  .events__date-number {
+    margin-right: 3px;
+  }
 }
 
 .events__date-day {
@@ -1933,9 +2061,16 @@ button,
   font-size: 14px;
   line-height: 21px;
 }
+@media (max-width: 1199.9px) {
+  .events__date-day {
+    font-size: 10px;
+    line-height: 15px;
+  }
+}
 
 .events__button {
-  width: 345px;
+  width: 106%;
+  max-width: 345px;
   text-align: center;
   padding: 27px 110px;
   font-weight: 700;
@@ -1949,6 +2084,83 @@ button,
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+@media (max-width: 1199.9px) {
+  .events__button {
+    max-width: unset;
+    grid-column: 1/-1;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 12px 48px;
+    font-size: 10px;
+    line-height: 11.72px;
+    letter-spacing: 0.5px;
+  }
+}
+@media (max-width: 767.9px) {
+  .events__button {
+    padding: 12px 25px;
+  }
+}
+
+@media (max-width: 1199.9px) {
+  .events__image {
+    width: 57.1%;
+  }
+}
+@media (max-width: 767.9px) {
+  .events__image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .events__image img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.swiper {
+  width: 1000px;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background-color: aliceblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper-slide img {
+  width: 58%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  right: 140px !important;
+  left: auto;
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  left: 140px !important;
+  right: auto;
 }
 
 .main-header {

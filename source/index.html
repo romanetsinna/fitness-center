@@ -271,10 +271,11 @@
                       </div>
                     </div>
                     <p>Ежегодные соревнования по CrossFit</p>
-                    <a class="button events__button" href="#">Заполнить заявку dkjf sdfkjsdf  jdfj</a>
+                    <a class="button events__button" href="#">Заполнить заявку</a>
                   </div>
                   <div class="events__image">
                     <picture>
+                      <source type="image/webp" media="(max-width: 767.9px)" srcset="img/events-mobile.webp 1x, img/events-mobile@2x.webp 2x">
                       <img src="img/events.webp" width="660" height="500" alt="Фото оборудования тренажерного зала." srcset="img/events@2x.webp 2x">
                     </picture>
                   </div>
@@ -283,7 +284,27 @@
             </section>
 
             <!-- Coaches -->
-            <section class="main-container__coaches coaches container">Coaches</section>
+            <section class="main-container__coaches coaches container">
+
+              <!-- Слайдер ПРИМЕР -->
+              <div class="swiper mySwiper">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <h1 class="info__header">Тренер 1</h1>
+                  </li>
+                  <li class="swiper-slide">
+                    <h1 class="info__header">Тренер 2</h1>
+                  </li>
+                  <li class="swiper-slide">
+                    <h1 class="info__header">Тренер 3</h1>
+                  </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+
+            </section>
 
             <!-- Benefits -->
             <section class="main-container__benefits benefits container">
