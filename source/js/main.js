@@ -2,10 +2,12 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initTabs} from './modules/tabs/init-tabs';
+import './modules/swiper/init-coaches';
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
+  // const coaches = document.querySelector('.swiper');
 
   // Utils
   // ---------------------------------
@@ -23,6 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    // initSwiper(coaches);
   });
 });
 
@@ -74,39 +77,4 @@ button.addEventListener('click', () => {
     const newIframe = createIframe(iframeBlock);
     iframeBlock.append(newIframe);
   }
-});
-
-// Слайдер
-
-const swiper = new window.Swiper('.swiper', {
-  // Default parameters
-  slidesPerView: 1,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  pagination: {
-    el: '.swiper-pagination',
-  },
-  mousewheel: true,
-  keyboard: true,
-  spaceBetween: 10,
-  // Responsive breakpoints
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    // when window width is >= 480px
-    480: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-    // when window width is >= 640px
-    640: {
-      slidesPerView: 4,
-      spaceBetween: 40,
-    },
-  },
 });
