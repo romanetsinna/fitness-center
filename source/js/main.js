@@ -2,12 +2,11 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initTabs} from './modules/tabs/init-tabs';
-import './modules/swiper/init-coaches';
+import {initSwiper} from './modules/swiper/init-coaches';
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
-  // const coaches = document.querySelector('.swiper');
 
   // Utils
   // ---------------------------------
@@ -22,10 +21,10 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initTabs();
     initModals();
+    initSwiper();
     const form = new Form();
     window.form = form;
     form.init();
-    // initSwiper(coaches);
   });
 });
 
