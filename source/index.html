@@ -71,8 +71,8 @@
           </div>
         </header>
 
-        <main class="main">
-          <div class="main__container">
+        <main>
+          <div class="main-container">
 
             <!-- About -->
             <section class="main-container__about about">
@@ -288,7 +288,9 @@
               <h2>Тренеры</h2>
 
               <!-- Слайдер ПРИМЕР -->
-              <div class="swiper">
+              <div class="coaches__button-prev swiper-button-prev"></div>
+
+              <div class="coaches__slider swiper">
                 <ul class="coaches__list swiper-wrapper">
 
                   <li class="coaches__item swiper-slide" tabindex="0">
@@ -296,16 +298,16 @@
                       <h3>Анна Павлова</h3>
                     </div>
                     <div class="coaches__item-hidden">
-                      <span>Анна Павлова</span>
+                      <h4>Анна Павлова</h4>
                       <span>CrossFit</span>
                       <ul class="coaches__item-hidden-list">
-                        <li class="cruises__item-hidden-item">
+                        <li class="coaches__item-hidden-item">
                           Certified Level 3 Trainer
                         </li>
-                        <li class="cruises__item-hidden-item">
+                        <li class="coaches__item-hidden-item">
                           Победитель чемпионата России по CrossFit
                         </li>
-                        <li class="cruises__item-hidden-item">
+                        <li class="coaches__item-hidden-item">
                           Опыт — 6 лет
                         </li>
                       </ul>
@@ -322,16 +324,16 @@
                       <h3>Алексей Лавров</h3>
                     </div>
                     <div class="coaches__item-hidden">
-                      <span>Алексей Лавров</span>
+                      <h4>Алексей Лавров</h4>
                       <span>CrossFit</span>
                       <ul class="coaches__item-hidden-list">
-                        <li class="cruises__item-hidden-item">
+                        <li class="coaches__item-hidden-item">
                           Certified Level 3 Trainer
                         </li>
-                        <li class="cruises__item-hidden-item">
+                        <li class="coaches__item-hidden-item">
                           Победитель чемпионата России по CrossFit
                         </li>
-                        <li class="cruises__item-hidden-item">
+                        <li class="coaches__item-hidden-item">
                           Опыт — 6 лет
                         </li>
                       </ul>
@@ -348,22 +350,24 @@
                       <h3>Александр Пашков</h3>
                     </div>
                     <div class="coaches__item-hidden">
-                      <span>Александр Пашков</span>
+                      <h4>Александр Пашков</h4>
                       <span>CrossFit</span>
                       <ul class="coaches__item-hidden-list">
-                        <li class="cruises__item-hidden-item">
+                        <li class="coaches__item-hidden-item">
                           Certified Level 3 Trainer
                         </li>
-                        <li class="cruises__item-hidden-item">
+                        <li class="coaches__item-hidden-item">
                           Победитель чемпионата России по CrossFit
                         </li>
-                        <li class="cruises__item-hidden-item">
+                        <li class="coaches__item-hidden-item">
                           Опыт — 6 лет
                         </li>
                       </ul>
                     </div>
                     <div class="coaches__image">
                       <picture>
+                        <source type="image/webp" media="(max-width: 767.9px)" srcset="img/swiper/slide1-mobile.webp 1x, img/swiper/slide1-mobile@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 1199.9px)" srcset="img/swiper/slide1-tablet.webp 1x, img/swiper/slide1-tablet@2x.webp 2x">
                         <img src="img/swiper/slide3.webp" width="260" height="294" alt="Фото тренера." srcset="img/swiper/slide3@2x.webp 2x">
                       </picture>
                     </div>
@@ -374,32 +378,33 @@
                       <h3>Мария Кетова</h3>
                     </div>
                     <div class="coaches__item-hidden">
-                      <span>Мария Кетова</span>
+                      <h4>Мария Кетова</h4>
                       <span>CrossFit</span>
                       <ul class="coaches__item-hidden-list">
-                        <li class="cruises__item-hidden-item">
+                        <li class="coaches__item-hidden-item">
                           Certified Level 3 Trainer
                         </li>
-                        <li class="cruises__item-hidden-item">
+                        <li class="coaches__item-hidden-item">
                           Победитель чемпионата России по CrossFit
                         </li>
-                        <li class="cruises__item-hidden-item">
+                        <li class="coaches__item-hidden-item">
                           Опыт — 6 лет
                         </li>
                       </ul>
                     </div>
                     <div class="coaches__image">
                       <picture>
+                        <source type="image/webp" media="(max-width: 1199.9px)" srcset="img/swiper/slide2-tablet.webp 1x, img/swiper/slide2-tablet@2x.webp 2x">
                         <img src="img/swiper/slide4.webp" width="260" height="294" alt="Фото тренера." srcset="img/swiper/slide4@2x.webp 2x">
                       </picture>
                     </div>
                   </li>
 
                 </ul>
-                <!-- <div class="swiper-pagination"></div> -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+
               </div>
+
+              <div class="coaches__button-next swiper-button-next"></div>
 
             </section>
 

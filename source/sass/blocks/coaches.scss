@@ -1,3 +1,23 @@
+.coaches {
+  position: relative;
+}
+
+.coaches__slider {
+  max-width: 1160px;
+  width: 100%;
+
+  @media (max-width: 1199.9px) {
+    width: calc((100% - 112px));
+    height: auto;
+    aspect-ratio: 2 / 1.04;
+  }
+
+  @media (max-width: 767.9px) {
+    width: calc((100% - 65px));
+    aspect-ratio: unset;
+  }
+}
+
 .coaches h2 {
   margin: 0;
   padding: 0;
@@ -7,6 +27,24 @@
   line-height: 64.8px;
   letter-spacing: 1.62px;
   margin-bottom: 48px;
+  color: $color-dark;
+
+  @media (max-width: 1199.9px) {
+    font-size: 42px;
+    line-height: 50.4px;
+    letter-spacing: 1.26px;
+    text-align: center;
+    margin-left: -5px;
+    margin-bottom: 31px;
+  }
+
+  @media (max-width: 767.9px) {
+    font-size: 32px;
+    line-height: 38.4px;
+    letter-spacing: 0.96px;
+    margin-left: -5px;
+    margin-bottom: 43px;
+  }
 }
 
 .coaches__list {
@@ -17,18 +55,36 @@
 
 .coaches__item {
   position: relative;
-  padding: 30px 30px 22px 30px;
-  width: calc(100vw - 326px) / 4;
-  height: calc(((100vw  - 326px) / 4) * 294 / 260);
-  max-width: 260px;
-  max-height: 294px;
+  width: calc((100% - 120px) / 4);
+  height: auto;
   background-color: $color-dark;
+
+  @media (max-width: 1199.9px) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media (max-width: 767.9px) {
+    width: 100%;
+  }
+}
+
+.coaches__image {
+  width: 100%;
+  height: 100%;
+}
+
+.coaches__image img {
+  width: 100%;
+  height: auto;
 }
 
 .coaches__item-content {
-  height: 100%;
+  position: absolute;
+  bottom: 7.5%;
+  left: 0;
+  right: 0;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
   //visibility: hidden;
 }
 
@@ -40,8 +96,12 @@
   font-size: 18px;
   line-height: 27px;
   color: $color-default-white;
-  margin: 0 auto;
-  z-index: 1;
+  text-align: center;
+  margin-top: auto;
+
+  @media (max-width: 1199.9px) {
+    transform: translateX(4px);
+  }
 }
 
 .coaches__item-hidden {
@@ -53,10 +113,30 @@
   visibility: hidden;
   opacity: 0;
   z-index: 5;
-  padding: 28px 25px 35px 25px;
-  background-color: gray;
+  padding: 52px 25px 35px 25px;
+  background-color: $color-item-hidden;
   display: flex;
   flex-direction: column;
+}
+
+.coaches__item-hidden h4 {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-default-white;
+  margin: 0 auto;
+}
+
+.coaches__item-hidden span {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-text-hidden;
+  margin: 0 auto;
 }
 
 .coaches__item:hover .coaches__item-content,
@@ -80,11 +160,61 @@
   overflow-y: auto;
 }
 
-.coaches__image {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+.coaches__button-prev {
+  color: $color-swiper-buttons;
+  top: 64%;
+  left: -20px;
+
+  @media (max-width: 1300px) {
+    left: 0;
+  }
+
+  @media (max-width: 1250px) {
+    left: 10px;
+  }
+
+  @media (max-width: 1199.9px) {
+    top: 61%;
+    left: 30px;
+  }
+
+  @media (max-width: 1050px) {
+    top: 61%;
+    left: 42px;
+  }
+
+  @media (max-width: 767.9px) {
+    top: 61.6%;
+    left: 14px;
+  }
+}
+
+.coaches__button-next {
+  color: #AFAFAF;
+  top: 64%;
+  right: -20px;
+
+  @media (max-width: 1300px) {
+    right: 0;
+  }
+
+  @media (max-width: 1250px) {
+    right: 10px;
+  }
+
+  @media (max-width: 1199.9px) {
+    top: 61%;
+    right: 30px;
+  }
+
+  @media (max-width: 1050px) {
+    top: 61%;
+    right: 42px;
+  }
+
+  @media (max-width: 767.9px) {
+    top: 61.6%;
+    right: 14px;
+  }
 }
 
