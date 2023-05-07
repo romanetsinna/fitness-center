@@ -1,0 +1,133 @@
+.benefits {
+  background-color: $colog-bg;
+  padding-top: 97px;
+  padding-bottom: 140px;
+}
+
+.benefits h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 64.8px;
+  letter-spacing: 1.62px;
+  color: $color-dark;
+  text-align: center;
+  margin-left: 10px;
+  margin-bottom: 47px;
+}
+
+.benefits__list {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 340px 335px;
+  //grid-template-columns: 340px 240px 340px;
+  //grid-template-columns: max-content max-content max-content;
+  column-gap: 34%;
+  row-gap: 147px;
+  //column-gap: 4.1%;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.benefits__item {
+  display: flex;
+  align-items: center;
+}
+
+.benefits__number {
+  display: flex;
+  flex-direction: column;
+}
+
+.benefits__number span {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-advantages;
+  margin-top: -20px;
+}
+
+.benefits__number span:first-child:not(.benefits__number-quantity) {
+  font-weight: 700;
+  font-size: 71px;
+  line-height: 106.5px;
+  background: linear-gradient(127.61deg, #D10A42 0%, #0041CA 45.58%);
+  color: transparent;
+  background-clip: text;
+}
+
+.benefits__info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.benefits__info--coaches {
+  margin-left: 33px;
+}
+
+.benefits__info span {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22.4px;
+  color: $color-dark;
+}
+
+.benefits__info span:first-child:not(.benefits__info-description) {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 6px;
+}
+
+.benefits__item--middle {
+  position: absolute;
+  top: 9px;
+  //left: calc(50% - 119px);
+  left: 39.8%;
+  width: 240px;
+  max-width: 240px;
+  background-color: $color-advantages-bg;
+  padding: 55px 34px 58px;
+  color: $color-default-white;
+  flex-direction: column;
+}
+
+.benefits__item--middle .benefits__number {
+  margin-bottom: 32px;
+}
+
+.benefits__item--middle .benefits__number-quantity {
+  font-weight: 700;
+  font-size: 74px;
+  line-height: 111px;
+  color: $color-default-white;
+  margin-left: 8px;
+  margin-bottom: 4px;
+}
+
+.benefits__item--middle .benefits__number-measure {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 39px;
+  color: $color-default-white;
+}
+
+.benefits__item--middle .benefits__info {
+  margin-left: 0;
+}
+
+.benefits__item--middle .benefits__info-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-default-white;
+  text-align: center;
+}
