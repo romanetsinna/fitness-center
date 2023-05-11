@@ -1,0 +1,137 @@
+.contacts {
+  padding: 56px 123px 62px;
+  border-top: 1px solid $color-contacts-border;
+
+  @media (max-width: 1199.9px) {
+    padding: 63px 133px 62px;
+  }
+
+  @media (max-width: 767.9px) {
+    padding: 62px 15px;
+  }
+}
+
+.contacts h2 {
+  padding: 0;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 64.8px;
+  letter-spacing: 1.62px;
+  color: $color-dark;
+  margin: 0 0 37px -3px;
+
+  @media (max-width: 1199.9px) {
+    font-size: 42px;
+    line-height: 50.4px;
+    letter-spacing: 1.26px;
+    margin: 0 0 32px 0;
+  }
+
+  @media (max-width: 767.9px) {
+    font-size: 32px;
+    line-height: 38.4px;
+    letter-spacing: 0.96px;
+    margin: 0 0 35px 0;
+  }
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 18px;
+  position: relative;
+
+  @media (max-width: 1199.9px) {
+    row-gap: 20px;
+  }
+
+  @media (max-width: 767.9px) {
+    grid-template-columns: 1fr;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 52%;
+    height: 92%;
+    width: 1px;
+    background-color: $color-contacts-border;
+
+    @media (max-width: 1199.9px) {
+      top: 8px;
+      left: 53%;
+      height: 88%;
+    }
+
+    @media (max-width: 767.9px) {
+      display: none;
+    }
+  }
+}
+
+.contacts__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__list span,
+.contacts__list a {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21.33px;
+  color: $color-dark;
+
+  @media (max-width: 1199.9px) {
+    font-size: 18px;
+    line-height: 27.42px;
+  }
+}
+
+.contacts__list span:first-child {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 3px;
+
+  @media (max-width: 1199.9px) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 5px;
+  }
+}
+
+.contacts__list li:nth-child(2n) {
+  margin-left: 72px;
+
+  @media (max-width: 1199.9px) {
+    margin-left: 63px;
+  }
+
+  @media (max-width: 767.9px) {
+    margin-left: 0;
+  }
+}
+
+.contacts__hours {
+  @media (max-width: 767.9px) {
+    order: 0;
+  }
+}
+
+.contacts__phone {
+  @media (max-width: 767.9px) {
+    order: 1;
+  }
+}
+
+.contacts__email {
+  @media (max-width: 767.9px) {
+    order: 2;
+  }
+}

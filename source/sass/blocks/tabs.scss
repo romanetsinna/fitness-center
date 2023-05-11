@@ -64,7 +64,7 @@
   &.is-active {
     opacity: 1;
     pointer-events: none;
-    border-bottom: 2px red solid;
+    border-bottom: 2px $color-tabs-active solid;
     margin-bottom: -12px;
 
     @media (max-width: 767.9px) {

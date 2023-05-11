@@ -58,7 +58,7 @@
   bottom: 0;
   left: 0;
   border: 7px solid;
-  border-image: linear-gradient(to right bottom, #D10A42, #00359F);
+  border-image: linear-gradient(to right bottom, #d10a42, #00359f);
   border-image-slice: 1;
   pointer-events: none;
 }
@@ -168,9 +168,8 @@
 
 .element__button:hover,
 .element__button:focus {
-  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   color: $color-default-white;
   border: 0;
   padding: 25px 46px;
 }
-

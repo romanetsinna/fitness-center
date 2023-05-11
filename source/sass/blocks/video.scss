@@ -6,7 +6,7 @@
   height: 72px;
   border-radius: 50%;
   border: 0;
-  background: linear-gradient(44.89deg, #003D85 25.38%, #B80027 74.89%);
+  background: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
   outline: 0;
   cursor: pointer;
 
@@ -29,9 +29,9 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 2px solid rgba(0,62,183,.2);
-  background: linear-gradient(to right,rgba(237,2,51,.2),rgba(0,62,183,.2));
-  mask: linear-gradient(#fff 0 0) padding-box,linear-gradient(#fff 0 0);
+  border: 2px solid rgba(0, 62, 183, 0.2);
+  background: linear-gradient(to right, rgba(237, 2, 51, 0.2), rgba(0, 62, 183, 0.2));
+  mask: linear-gradient($color-default-white 0 0) padding-box, linear-gradient($color-default-white 0 0);
   mask-composite: exclude;
 
   @media (max-width: 1199.9px) {
@@ -50,7 +50,7 @@
 .video__icon {
   width: 12px;
   height: 11px;
-  transform: translate(1px, 0px);
+  transform: translate(1px, 0);
 }
 
 .video__container {

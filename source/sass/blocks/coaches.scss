@@ -1,6 +1,14 @@
 .coaches {
   position: relative;
   padding-bottom: 140px;
+
+  @media (max-width: 1199.9px) {
+    padding-bottom: 100px;
+  }
+
+  @media (max-width: 767.9px) {
+    padding-bottom: 71px;
+  }
 }
 
 .coaches__slider {
@@ -136,7 +144,6 @@
 }
 
 .coaches__item-hidden h4 {
-  margin: 0;
   padding: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
@@ -234,18 +241,18 @@
   }
 
   @media (max-width: 1050px) {
-    top: 61%;
+    top: 48.3%;
     left: 42px;
   }
 
   @media (max-width: 767.9px) {
-    top: 61.6%;
+    top: 51.5%;
     left: 14px;
   }
 }
 
 .coaches__button-next {
-  color: #AFAFAF;
+  color: $color-swiper-buttons;
   top: 47.5%;
   right: -20px;
 
@@ -263,13 +270,12 @@
   }
 
   @media (max-width: 1050px) {
-    top: 61%;
+    top: 48.3%;
     right: 42px;
   }
 
   @media (max-width: 767.9px) {
-    top: 61.6%;
+    top: 51.5%;
     right: 14px;
   }
 }
-

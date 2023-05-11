@@ -1,14 +1,14 @@
 import Swiper from '../../vendor/swiper';
 
-const initSwiper = () => {
+const initCoachesSwiper = () => {
 
-  new Swiper('.swiper', {// eslint-disable-line
+  new Swiper('#coaches-slider', {// eslint-disable-line
     direction: 'horizontal',
     loop: true,
 
     navigation: {
-      prevEl: '.swiper-button-prev',
-      nextEl: '.swiper-button-next',
+      prevEl: '.coaches__button-prev',
+      nextEl: '.coaches__button-next',
     },
 
     maxBackfaceHiddenSlides: 0,
@@ -28,13 +28,6 @@ const initSwiper = () => {
         spaceBetween: 30,
       },
 
-      // when window width is >= 1200px
-      // 1200: {
-      //   slidesPerView: 4,
-      //   slidesPerGroup: 4,
-      //   spaceBetween: 30,
-      // },
-
       // when window width is >= 1250px
       1200: {
         slidesPerView: 4,
@@ -45,4 +38,16 @@ const initSwiper = () => {
   });
 };
 
-export {initSwiper};
+const initReviewsSwiper = () => {
+
+  new Swiper('#reviews-slider', {// eslint-disable-line
+    direction: 'horizontal',
+    navigation: {
+      prevEl: '.reviews__button-prev',
+      nextEl: '.reviews__button-next',
+    },
+    slidesPerView: 1,
+  });
+};
+
+export {initCoachesSwiper, initReviewsSwiper};
