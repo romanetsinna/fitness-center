@@ -82,6 +82,17 @@
   }
 }
 
+//Возможно убрать
+.tabs__control.is-active:focus,
+.tabs__control.is-active:focus-visible {
+  color: $color-dark;
+}
+
+.tabs__control.is-active:active {
+  color: $color-dark;
+}
+//Возможно убрать
+
 .tabs__content {
   margin-bottom: 40px;
   transition: height 0.3s;

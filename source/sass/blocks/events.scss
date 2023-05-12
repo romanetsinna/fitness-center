@@ -225,6 +225,16 @@
   border: 4px solid $color-default-white;
   user-select: none;
 
+  &:hover,
+  &:focus-visible {
+    background-color: $color-default-white;
+    color: $color-tabs-active;
+  }
+
+  &:active {
+    color: rgba($color-tabs-active, 0.8);
+  }
+
   @media (max-width: 1199.9px) {
     max-width: unset;
     grid-column: 1/-1;

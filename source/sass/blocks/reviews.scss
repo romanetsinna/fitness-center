@@ -134,6 +134,15 @@
   align-self: center;
   margin-top: 5px;
 
+  &:hover,
+  &:focus-visible {
+    color: $color-dark;
+  }
+
+  &:active {
+    color: rgba($color-dark, 0.8);
+  }
+
   @media (max-width: 1199.9px) {
     margin-top: 0;
   }

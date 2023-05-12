@@ -7,3 +7,17 @@
   column-gap: 11px;
   row-gap: 10px;
 }
+
+.social__link svg {
+  fill: $color-default-white;
+}
+
+.social__link:hover svg,
+.social__link:focus svg,
+.social__link:focus-visible svg {
+  fill: $color-footer-nav;
+}
+
+.social__link:active svg {
+  fill: rgba($color-footer-nav, 0.8);
+}

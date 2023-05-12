@@ -93,6 +93,17 @@
   }
 }
 
+.contacts__list a {
+  &:hover,
+  &:focus-visible {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
 .contacts__list span:first-child {
   font-weight: 700;
   font-size: 16px;

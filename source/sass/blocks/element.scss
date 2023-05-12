@@ -159,6 +159,7 @@
   border: 2px solid $color-dark;
   margin-top: 34px;
   text-align: center;
+  user-select: none;
 
   @media (max-width: 767.9px) {
     padding: 24px 44px;
@@ -172,4 +173,8 @@
   color: $color-default-white;
   border: 0;
   padding: 25px 46px;
+}
+
+.element__button:active {
+  color: rgba($color-default-white, 0.7);
 }

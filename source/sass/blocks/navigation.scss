@@ -49,3 +49,19 @@
     margin-top: 40px;
   }
 }
+
+
+.navigation__item a {
+  color: $color-default-white;
+  user-select: none;
+}
+
+.navigation__item a:hover,
+.navigation__item a:focus,
+.navigation__item a:focus-visible {
+  color: $color-footer-nav;
+}
+
+.navigation__item a:active {
+  color: rgba($color-footer-nav, 0.8);
+}

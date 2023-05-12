@@ -2,7 +2,7 @@ import Swiper from '../../vendor/swiper';
 
 const initCoachesSwiper = () => {
 
-  new Swiper('#coaches-slider', {// eslint-disable-line
+  const coachSwiper = new Swiper('#coaches-slider', {
     direction: 'horizontal',
     loop: true,
 
@@ -35,6 +35,24 @@ const initCoachesSwiper = () => {
         spaceBetween: 40,
       },
     },
+  });
+
+  coachSwiper.slides.forEach((slide) => {
+    slide.tabIndex = -1;
+  });
+
+  for (let i = coachSwiper.activeIndex; i < (coachSwiper.activeIndex + coachSwiper.params.slidesPerView); i++) {
+    coachSwiper.slides[i].tabIndex = 0;
+  }
+
+  coachSwiper.on('slideChange', (swiper) => {
+    swiper.slides.forEach((slide) => {
+      slide.tabIndex = -1;
+    });
+
+    for (let i = swiper.activeIndex; i < (swiper.activeIndex + swiper.params.slidesPerView); i++) {
+      swiper.slides[i].tabIndex = 0;
+    }
   });
 };
 

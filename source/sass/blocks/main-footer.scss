@@ -19,13 +19,18 @@
   }
 }
 
-.main-footer span {
-  color: $color-default-white;
-}
-
 .main-footer__logo {
   margin-top: 9px;
   margin-right: auto;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 
   @media (max-width: 1199.9px) {
     margin-top: 3px;
