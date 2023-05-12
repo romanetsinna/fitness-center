@@ -49,6 +49,16 @@
 
 .main-header__logo {
   margin-top: 10px;
+  user-select: none;
+
+  &:hover,
+  &:focus-visible {
+  opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 
   @media (max-width: 1199.9px) {
     margin-top: 6px;
@@ -75,6 +85,16 @@
 .main-header__phone {
   place-self: start end;
   grid-column: 3/4;
+  user-select: none;
+
+  &:hover,
+  &:focus-visible {
+  opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .main-header__phone span {

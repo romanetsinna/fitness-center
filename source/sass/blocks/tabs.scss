@@ -50,6 +50,15 @@
   min-width: auto;
   justify-content: center;
 
+  &:hover,
+  &:focus-visible {
+    color: $color-tabs-price;
+  }
+
+  &:active {
+    color: rgba($color-tabs-price, 0.7);
+  }
+
   @media (max-width: 1199.9px) {
     font-size: 18px;
     line-height: 27px;

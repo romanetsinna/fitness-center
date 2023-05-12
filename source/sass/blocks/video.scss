@@ -10,6 +10,19 @@
   outline: 0;
   cursor: pointer;
 
+  &:hover,
+  &:focus-visible {
+    border-radius: 30%;
+
+    &::after {
+      border-radius: 30%;
+    }
+  }
+
+  &:active {
+    background: linear-gradient(44.89deg, #b80027 25.38%, #003d85 74.89%);
+  }
+
   @media (max-width: 1199.9px) {
     left: 39.8%;
     width: 52px;
