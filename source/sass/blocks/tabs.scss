@@ -26,15 +26,24 @@
 .tabs__controls::after {
   content: "";
   position: absolute;
-  right: 0;
+  //right: 0;
+  right: 5px;
   bottom: -12px;
-  left: 0;
+  left: 4px;
   height: 2px;
-  background: $color-tabs;
+  background: #787878;
   opacity: 0.2;
+  //width: 97%;
+
+  @media (max-width: 1199.9px) {
+    left: 6px;
+  }
 
   @media (max-width: 767.9px) {
+    left: -1px;
     bottom: -15px;
+    right: 0;
+    //width: 100%;
   }
 }
 
@@ -69,16 +78,38 @@
     font-size: 16px;
     line-height: 24px;
   }
+}
 
-  &.is-active {
-    opacity: 1;
-    pointer-events: none;
-    border-bottom: 2px $color-tabs-active solid;
-    margin-bottom: -12px;
+.tabs__control.is-active {
+  position: relative;
+}
 
-    @media (max-width: 767.9px) {
-      margin-bottom: -15px;
-    }
+.tabs__control.is-active::before {
+  content: "";
+  display: block;
+  position: absolute;
+
+  // left: 4px;
+  // bottom: -12px;
+  // width: 88%;
+
+  left: 5px;
+  bottom: -12px;
+  right: 7px;
+
+  height: 2px;
+  background-color: #d10a42;
+
+  @media (max-width: 1199.9px) {
+    left: 6px;
+    right: 5px;
+  }
+
+  @media (max-width: 767.9px) {
+    bottom: -15px;
+    left: -1px;
+    right: -5px;
+    //width: 110%;
   }
 }
 

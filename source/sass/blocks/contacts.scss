@@ -1,13 +1,15 @@
 .contacts {
-  padding: 56px 123px 62px;
-  border-top: 1px solid $color-contacts-border;
+  margin-right: auto;
+  max-width: 530px;
 
   @media (max-width: 1199.9px) {
-    padding: 63px 133px 62px;
+    max-width: 530px;
+    padding: 0 15px;
+    margin: 0 auto;
   }
 
-  @media (max-width: 767.9px) {
-    padding: 62px 15px;
+   @media (max-width: 767.9px) {
+    padding: unset;
   }
 }
 
@@ -43,7 +45,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 18px;
-  position: relative;
 
   @media (max-width: 1199.9px) {
     row-gap: 20px;
@@ -51,26 +52,6 @@
 
   @media (max-width: 767.9px) {
     grid-template-columns: 1fr;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 52%;
-    height: 92%;
-    width: 1px;
-    background-color: $color-contacts-border;
-
-    @media (max-width: 1199.9px) {
-      top: 8px;
-      left: 53%;
-      height: 88%;
-    }
-
-    @media (max-width: 767.9px) {
-      display: none;
-    }
   }
 }
 
@@ -136,6 +117,28 @@
 }
 
 .contacts__phone {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -40%;
+    height: 217%;
+    width: 1px;
+    background-color: $color-contacts-border;
+
+    @media (max-width: 1199.9px) {
+      top: 8px;
+      left: -26%;
+      height: 207%;
+    }
+
+    @media (max-width: 767.9px) {
+      display: none;
+    }
+  }
+
   @media (max-width: 767.9px) {
     order: 1;
   }
