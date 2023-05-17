@@ -58,9 +58,9 @@
   width: 100%;
   list-style-type: none;
   display: grid;
-  grid-template-columns: 340px 240px 335px;
-  column-gap: 3.9%;
-  row-gap: 147px;
+  grid-template-columns: 340px 240px 350px;
+  column-gap: 4.1%;
+  row-gap: 150px;
   padding-left: 80px;
   padding-right: 80px;
 
@@ -81,9 +81,9 @@
 
 .benefits__item {
   display: flex;
-  align-items: center;
 
   @media (max-width: 1199.9px) {
+    align-items: center;
     grid-column: 1 / 2;
     padding-left: 0;
   }
@@ -98,7 +98,7 @@
 
   &:nth-child(2n+3) {
     grid-column: 3 / 4;
-    padding-left: 15px;
+    padding-left: 19px;
 
     @media (max-width: 1199.9px) {
       grid-column: 2 / 3;
@@ -178,7 +178,7 @@
   font-size: 14px;
   line-height: 21px;
   color: $color-advantages;
-  margin-top: -20px;
+  margin-top: -21px;
 
   @media (max-width: 1199.9px) {
     margin-top: -18px;
@@ -254,20 +254,20 @@
 
 .benefits__item--middle {
   grid-column: 2 / 3;
-  grid-row: 1 / -1;
-  margin-top: 8px;
-  margin-bottom: 5px;
+  grid-row: 1 / span 2;
   background-color: $color-advantages-bg;
   padding: 55px 34px 58px;
   color: $color-default-white;
   flex-direction: column;
+  place-self: center;
+  align-items: center;
 
   @media (max-width: 1199.9px) {
     position: unset;
     grid-column: 1 / -1;
     grid-row: 2 / 3;
-    // width: 440px;
-    // max-width: 440px;
+    width: 440px;
+    max-width: 440px;
     padding: 32px 33px 36px 33px;
     margin: -6px auto -7px;
   }

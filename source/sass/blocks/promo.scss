@@ -8,7 +8,7 @@
 
   @media (max-width: 767.9px) {
     padding-top: 63px;
-    padding-bottom: 64px;
+    padding-bottom: 62px;
   }
 }
 
@@ -86,7 +86,7 @@
   }
 }
 
-.promo__description span {
+.promo__description span:not(.promo__button-text) {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 70px;
@@ -97,7 +97,7 @@
   }
 }
 
-.promo__description span:first-child {
+.promo__description span:first-child:not(.promo__button-text) {
   font-size: 28px;
   line-height: 43.68px;
   margin-bottom: -26px;
@@ -119,20 +119,26 @@
 
 .promo__button {
   margin-top: auto;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16.41px;
-  letter-spacing: 0.7px;
-  text-transform: uppercase;
-  color: $color-default-white;
-  border-bottom: 1px solid $color-default-white;
   width: fit-content;
   user-select: none;
 
   @media (max-width: 767.9px) {
     align-self: center;
   }
+}
+
+.promo__button-text {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  //line-height: 16.41px;
+  line-height: 19px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: $color-default-white;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
 
   &:hover,
   &:focus-visible {
@@ -236,18 +242,18 @@
   }
 
   @media (max-width: 767.9px) {
-    padding: 30px 35px 39px 35px;
+    padding: 29px 35px 40px;
     text-align: center;
   }
 }
 
-.promo__wrapper-second .promo__button {
+.promo__wrapper-second .promo__button-text {
   color: $color-advantages-bg;
-  border-bottom: 1px solid $color-advantages-bg;
   font-size: 12px;
-  line-height: 14.06px;
+  //line-height: 14.06px;
+  line-height: 16px;
   letter-spacing: 0.6px;
-  user-select: none;
+  text-underline-offset: 3px;
 
   &:hover,
   &:focus-visible {
